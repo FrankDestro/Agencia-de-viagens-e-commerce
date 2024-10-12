@@ -1,0 +1,104 @@
+.teste {
+    margin-top: 20px;
+}
+
+.search-travel {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border-radius: 10px; /* Arredondamento dos cantos */
+    color: black; /* Cor do texto para contraste com o fundo */
+}
+
+.search-travel h2 {
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.search-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin: 10px 5px; /* Ajuste do espaço entre os inputs */
+    flex: 1 1 45%; /* Ajusta a largura dos inputs para ocuparem 45% */
+    position: relative; /* Para posicionar o ícone dentro do input */
+}
+
+.input-group .icon {
+    position: absolute; /* Posiciona o ícone dentro do input */
+    left: 10px; /* Distância do lado esquerdo */
+    color: #888; /* Cor do ícone */
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px 10px 10px 40px; /* Espaço à esquerda para o ícone */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px; /* Espaço entre o ícone e o input */
+}
+
+.guests-selection {
+    display: flex;
+    justify-content: end;
+}
+
+.guests-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 5px; /* Ajuste do espaço entre os selects */
+    flex: 1 1 30%; /* Ajusta a largura dos selects para ocuparem 30% */
+}
+
+.guests-item label {
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px; /* Espaço acima do botão */
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .input-group,
+    .guests-item {
+        flex: 1 1 100%; /* Ocupa 100% da largura em telas menores */
+    }
+
+    .search-button {
+        margin-top: 10px; /* Ajuste do espaço acima do botão em telas menores */
+    }
+}
+
+
+.search-travel {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    background: white; /* Cor de fundo do SearchTravel */
+    border-radius: 10px; /* Arredondamento dos cantos */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    z-index: 10; /* Garante que o SearchTravel fique acima do carrossel */
+}

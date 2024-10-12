@@ -1,0 +1,39 @@
+/* src/styles/SubMenu.css */
+.submenu {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ccc; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #12579b, #00bfff); /* Degradê azul */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+.submenu-item span {
+    color: #fff; /* Define a cor do texto como branco */
+}
+
+.submenu-item {
+    display: flex;
+    flex-direction: column; /* Coloca o texto abaixo do ícone */
+    align-items: center; /* Centraliza o conteúdo */
+    margin: 10px 15px; /* Espaço entre os itens do submenu */
+    text-align: center; /* Centraliza o texto */
+    cursor: pointer; /* Indica que o item é clicável */
+}
+
+.icon-circle {
+    display: flex;
+    justify-content: center; /* Centraliza o ícone dentro do círculo */
+    align-items: center; /* Centraliza o ícone verticalmente */
+    width: 50px; /* Largura do círculo */
+    height: 50px; /* Altura do círculo */
+    border-radius: 50%; /* Círculo perfeito */
+    background-color: #f0f0f0; /* Cor de fundo do círculo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin-bottom: 5px; /* Espaço abaixo do ícone */
+    transition: background-color 0.3s; /* Efeito de transição ao passar o mouse */
+}
+
+.icon-circle:hover {
+    background-color: #e0e0e0; /* Cor ao passar o mouse */
+}

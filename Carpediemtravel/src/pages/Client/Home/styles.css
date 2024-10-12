@@ -1,0 +1,5 @@
+.search-travel-container {
+    position: relative; /* Permite o posicionamento absoluto de elementos internos */
+    top: -90px; /* Ajuste este valor conforme necessário para posicionar mais para cima */
+    z-index: 1; /* Garante que o SearchTravel fique acima do TravelCarousel */
+}

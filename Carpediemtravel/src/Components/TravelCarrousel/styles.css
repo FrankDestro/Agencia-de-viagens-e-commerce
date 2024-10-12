@@ -1,0 +1,11 @@
+.travel-carousel {
+    margin: 20px auto;
+    max-width: 1700px; /* Manter o max-width */
+}
+
+.travel-carousel img {
+    width: 100%;
+    height: auto; /* Altura automática para manter a proporção da imagem */
+    max-height: 500px; /* Limitar a altura máxima */
+    object-fit: cover; /* Cobrir o espaço disponível */
+}
