@@ -5,8 +5,6 @@ import {
   faSearch,
   faMapMarkerAlt,
   faCalendarAlt,
-  faBed,
-  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import "./styles.css"; // Adicione o caminho correto do seu CSS
 import TravelOptions from "../Viajantes";
@@ -16,9 +14,9 @@ const SearchTravel: React.FC = () => {
   const [origin, setOrigin] = useState("");
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
-  const [rooms, setRooms] = useState(1);
-  const [adults, setAdults] = useState(1);
-  const [children, setChildren] = useState(0);
+  const [rooms, ] = useState(1);
+  const [adults, ] = useState(1);
+  const [children, ] = useState(0);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();

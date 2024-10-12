@@ -1,6 +1,6 @@
 import { faBed, faChild, faPerson } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
+import { SetStateAction, useState } from 'react';
 
 
 const TravelOptions = () => {
@@ -8,18 +8,18 @@ const TravelOptions = () => {
     const [children, setChildren] = useState(0);
     const [adults, setAdults] = useState(1);
     const [showMenu, setShowMenu] = useState(false);
-    const [summaryVisible, setSummaryVisible] = useState(false);
 
-    const handleIncrease = (setter) => {
-        setter((prev) => prev + 1);
+
+    const handleIncrease = (setter: { (value: SetStateAction<number>): void; (value: SetStateAction<number>): void; (value: SetStateAction<number>): void; (arg0: (prev: any) => any): void; }) => {
+        setter((prev: number) => prev + 1);
     };
 
-    const handleDecrease = (setter) => {
-        setter((prev) => (prev > 0 ? prev - 1 : 0));
+    const handleDecrease = (setter: { (value: SetStateAction<number>): void; (value: SetStateAction<number>): void; (value: SetStateAction<number>): void; (arg0: (prev: any) => number): void; }) => {
+        setter((prev: number) => (prev > 0 ? prev - 1 : 0));
     };
 
     const handleApply = () => {
-        setSummaryVisible(true);
+       
         setShowMenu(false);
     };
 
