@@ -1,11 +1,11 @@
 // src/components/NavbarWithLanguages.tsx
-import React, { useState } from 'react';
-import { faGlobe, faPhone, faSignInAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faGlobe, faPhone, faSignInAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
 import { Dropdown, Nav, Navbar } from 'react-bootstrap';
-import Logo from '../../assets/logomain.jpg'; 
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-import './styles.css'; 
+import Logo from '../../assets/logomain.jpg';
+import './styles.css';
 
 const Header: React.FC = () => {
   const [lang, setLang] = useState<string>('Português (BR)');
@@ -32,10 +32,10 @@ const Header: React.FC = () => {
       </Navbar.Brand>
       <Nav className="me-auto">
         <span className="mx-3">
-          <FontAwesomeIcon icon={faPhone} /> Central de atendimento: 11 3003 9282
+          <FontAwesomeIcon icon={faPhone} /> Televendas: 0800 049 8790
         </span>
         <span className="mx-3">
-          | Televendas: 0800 049 8790
+        <FontAwesomeIcon icon={faEnvelope} /> email: agencia.ag@gmail.com
         </span>
       </Nav>
       <Dropdown className="d-inline-block">

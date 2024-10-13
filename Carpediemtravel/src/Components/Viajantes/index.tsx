@@ -116,7 +116,6 @@ const TravelOptions = () => {
                     </div>
                 </div>
             )}
-
         </div>
     );
 };

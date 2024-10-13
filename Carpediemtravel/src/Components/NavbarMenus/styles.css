@@ -2,14 +2,10 @@
 .submenu {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid #ccc; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(135deg, #12579b, #00bfff); /* Degradê azul */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
 }
 
 .submenu-item span {
-    color: #fff; /* Define a cor do texto como branco */
+    color: black; /* Define a cor do texto como branco */
 }
 
 .submenu-item {
@@ -32,8 +28,12 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
     margin-bottom: 5px; /* Espaço abaixo do ícone */
     transition: background-color 0.3s; /* Efeito de transição ao passar o mouse */
+    border: 1px solid rgba(0, 0, 0, 0.021);
 }
 
 .icon-circle:hover {
     background-color: #e0e0e0; /* Cor ao passar o mouse */
+    scale: 1.2;
+    transition: 0.2;
+    
 }

@@ -1,0 +1,38 @@
+.content-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
+  justify-content: space-between; /* Espaçamento entre os cards */
+  gap: 20px; /* Espaçamento entre os cards */
+  max-width: 1600px;
+  margin: 0 auto; /* Centraliza o container na tela */
+}
+
+.package-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.container-package {
+  position: relative;
+  top: -400px; /* Ajuste este valor conforme necessário para posicionar mais para cima */
+  z-index: 1; /* Garante que o SearchTravel fique acima do TravelCarousel */
+}
+
+.card-item {
+  flex: 1 1 calc(25% - 20px); /* Quatro cards por linha, ajustáveis */
+  min-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .card-item {
+    flex: 1 1 calc(50% - 20px); /* Dois cards por linha em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-item {
+    flex: 1 1 100%; /* Um card por linha em telas muito pequenas */
+  }
+}

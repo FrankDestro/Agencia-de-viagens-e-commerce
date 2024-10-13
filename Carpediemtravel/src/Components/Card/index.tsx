@@ -54,7 +54,7 @@ interface TravelCardProps {
 }
 
 // Componente Card
-const TravelCard: React.FC<TravelCardProps> = ({ image, title, description, price }) => {
+const Card: React.FC<TravelCardProps> = ({ image, title, description, price }) => {
   return (
     <CardContainer>
       <Image src={image} alt={title} />
@@ -68,4 +68,4 @@ const TravelCard: React.FC<TravelCardProps> = ({ image, title, description, pric
 };
 
 // Exportando o Componente
-export default TravelCard;
+export default Card;

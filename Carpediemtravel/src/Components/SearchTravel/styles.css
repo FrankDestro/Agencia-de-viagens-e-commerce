@@ -1,5 +1,5 @@
 .teste {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .search-travel {
@@ -93,12 +93,62 @@
 }
 
 
-.search-travel {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 20px;
-    background: white; /* Cor de fundo do SearchTravel */
-    border-radius: 10px; /* Arredondamento dos cantos */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    z-index: 10; /* Garante que o SearchTravel fique acima do carrossel */
-}
+.tabs {
+    display: flex;
+    justify-content: flex-start; /* Abas uma ao lado da outra */
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    background: none; /* Remove o fundo */
+    border: none; /* Remove bordas */
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #333; /* Cor do texto */
+    font-size: 16px;
+    margin-right: 10px;
+    border-bottom: 2px solid transparent; /* Linha transparente por padrão */
+    transition: border-bottom 0.3s ease;
+  }
+  
+  .tab-button:hover {
+    border-bottom: 2px solid #ccc; /* Linha em hover */
+  }
+  
+  .tab-button.active {
+    border-bottom: 2px solid #007bff; /* Aba ativa com sublinhado azul */
+  }
+  
+  .tab-content {
+    margin-top: 20px;
+  }
+  
+  input,
+  button {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .search-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .icon {
+    margin-right: 8px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
