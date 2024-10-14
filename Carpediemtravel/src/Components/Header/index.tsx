@@ -26,7 +26,7 @@ const Header: React.FC = () => {
         <img
           src={Logo} 
           alt="Logo"
-          style={{ width: '160px', height: '60px', marginRight: '10px' }} 
+          style={{ width: '190px', height: '70px', marginRight: '10px' }} 
         />
        
       </Navbar.Brand>

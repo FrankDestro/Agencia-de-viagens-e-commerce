@@ -12,6 +12,7 @@ const FooterContainer = styled.footer`
   position: relative;
   bottom: 0;
   width: 100%;
+  margin-bottom : 10px
 
   @media (min-width: 768px) {
     text-align: left;

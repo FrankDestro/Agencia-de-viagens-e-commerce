@@ -1,154 +1,152 @@
 .teste {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .search-travel {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    background: #fff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    border-radius: 10px; /* Arredondamento dos cantos */
-    color: black; /* Cor do texto para contraste com o fundo */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  border-radius: 10px; /* Arredondamento dos cantos */
+  color: black; /* Cor do texto para contraste com o fundo */
 }
 
 .search-travel h2 {
-    color: gray;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 700;
-    font-size: 18px;
+  color: gray;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .search-inputs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .input-group {
-    display: flex;
-    align-items: center;
-    margin: 10px 5px; /* Ajuste do espaço entre os inputs */
-    flex: 1 1 45%; /* Ajusta a largura dos inputs para ocuparem 45% */
-    position: relative; /* Para posicionar o ícone dentro do input */
+  display: flex;
+  align-items: center;
+  margin: 10px 5px; /* Ajuste do espaço entre os inputs */
+  flex: 1 1 45%; /* Ajusta a largura dos inputs para ocuparem 45% */
+  position: relative; /* Para posicionar o ícone dentro do input */
 }
 
 .input-group .icon {
-    position: absolute; /* Posiciona o ícone dentro do input */
-    left: 10px; /* Distância do lado esquerdo */
-    color: #888; /* Cor do ícone */
+  position: absolute; /* Posiciona o ícone dentro do input */
+  left: 10px; /* Distância do lado esquerdo */
+  color: #888; /* Cor do ícone */
 }
 
 .input-group input {
-    flex: 1;
-    padding: 10px 10px 10px 40px; /* Espaço à esquerda para o ícone */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-left: 10px; /* Espaço entre o ícone e o input */
+  flex: 4;
+  padding: 10px 10px 10px 40px; /* Espaço à esquerda para o ícone */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 10px; /* Espaço entre o ícone e o input */
 }
 
 .guests-selection {
-    display: flex;
-    justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 
 .guests-item {
-    display: flex;
-    align-items: center;
-    margin: 10px 5px; /* Ajuste do espaço entre os selects */
-    flex: 1 1 30%; /* Ajusta a largura dos selects para ocuparem 30% */
+  display: flex;
+  align-items: center;
+  margin: 10px 5px; /* Ajuste do espaço entre os selects */
+  flex: 1 1 30%; /* Ajusta a largura dos selects para ocuparem 30% */
 }
 
 .guests-item label {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .search-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 15px; /* Espaço acima do botão */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px; /* Espaço acima do botão */
 }
 
 .search-button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /* Media Queries para responsividade */
 @media (max-width: 768px) {
-    .input-group,
-    .guests-item {
-        flex: 1 1 100%; /* Ocupa 100% da largura em telas menores */
-    }
+  .input-group,
+  .guests-item {
+    flex: 1 1 100%; /* Ocupa 100% da largura em telas menores */
+  }
 
-    .search-button {
-        margin-top: 10px; /* Ajuste do espaço acima do botão em telas menores */
-    }
+  .search-button {
+    margin-top: 10px; /* Ajuste do espaço acima do botão em telas menores */
+  }
 }
 
-
 .tabs {
-    display: flex;
-    justify-content: flex-start; /* Abas uma ao lado da outra */
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 20px;
-  }
-  
-  .tab-button {
-    background: none; /* Remove o fundo */
-    border: none; /* Remove bordas */
-    padding: 10px 20px;
-    cursor: pointer;
-    color: #333; /* Cor do texto */
-    font-size: 16px;
-    margin-right: 10px;
-    border-bottom: 2px solid transparent; /* Linha transparente por padrão */
-    transition: border-bottom 0.3s ease;
-  }
-  
-  .tab-button:hover {
-    border-bottom: 2px solid #ccc; /* Linha em hover */
-  }
-  
-  .tab-button.active {
-    border-bottom: 2px solid #007bff; /* Aba ativa com sublinhado azul */
-  }
-  
-  .tab-content {
-    margin-top: 20px;
-  }
-  
-  input,
-  button {
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .search-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-  }
-  
-  .search-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .icon {
-    margin-right: 8px;
-  }
-  
-  .input-group {
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-  }
-  
+  display: flex;
+  justify-content: flex-start; /* Abas uma ao lado da outra */
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background: none; /* Remove o fundo */
+  border: none; /* Remove bordas */
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #333; /* Cor do texto */
+  font-size: 16px;
+  margin-right: 10px;
+  border-bottom: 2px solid transparent; /* Linha transparente por padrão */
+  transition: border-bottom 0.3s ease;
+}
+
+.tab-button:hover {
+  border-bottom: 2px solid #ccc; /* Linha em hover */
+}
+
+.tab-button.active {
+  border-bottom: 2px solid #007bff; /* Aba ativa com sublinhado azul */
+}
+
+.tab-content {
+  margin-top: 20px;
+}
+
+input,
+button {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}

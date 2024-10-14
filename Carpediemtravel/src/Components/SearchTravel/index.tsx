@@ -6,7 +6,7 @@ import {
   faMapMarkerAlt,
   faPaintRoller,
   faPlaneDeparture,
-  faSearch
+  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
@@ -45,8 +45,6 @@ const SearchTravel: React.FC = () => {
   };
 
   return (
-
-    
     <div className="search-travel">
       {/* Controles de Abas */}
       <div className="tabs">
@@ -55,28 +53,34 @@ const SearchTravel: React.FC = () => {
           onClick={() => setActiveTab(1)}
         >
           Voos
-          <FontAwesomeIcon icon={faPlaneDeparture} style={{marginLeft: "10px"}}/>
+          <FontAwesomeIcon
+            icon={faPlaneDeparture}
+            style={{ marginLeft: "10px" }}
+          />
         </button>
         <button
           className={`tab-button ${activeTab === 2 ? "active" : ""}`}
           onClick={() => setActiveTab(2)}
         >
           Pacotes
-          <FontAwesomeIcon icon={faGift} style={{marginLeft: "10px"}}/>
+          <FontAwesomeIcon icon={faGift} style={{ marginLeft: "10px" }} />
         </button>
         <button
           className={`tab-button ${activeTab === 3 ? "active" : ""}`}
           onClick={() => setActiveTab(3)}
         >
           Hospedagem
-          <FontAwesomeIcon icon={faHotel} style={{marginLeft: "10px"}}/>
+          <FontAwesomeIcon icon={faHotel} style={{ marginLeft: "10px" }} />
         </button>
         <button
           className={`tab-button ${activeTab === 4 ? "active" : ""}`}
           onClick={() => setActiveTab(4)}
         >
           Parques
-          <FontAwesomeIcon icon={faPaintRoller} style={{marginLeft: "10px"}}/>
+          <FontAwesomeIcon
+            icon={faPaintRoller}
+            style={{ marginLeft: "10px" }}
+          />
         </button>
       </div>
 
@@ -85,7 +89,9 @@ const SearchTravel: React.FC = () => {
         {activeTab === 1 && (
           <div>
             <form onSubmit={handleSearch}>
-              <div className="search-inputs">
+              <div
+                className="search-inputs"
+              >
                 <div className="input-group">
                   <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
                   <input
@@ -146,7 +152,7 @@ const SearchTravel: React.FC = () => {
             <p>Conteúdo da Aba 3: Aqui você pode colocar observações.</p>
           </div>
         )}
-         {activeTab === 4 && (
+        {activeTab === 4 && (
           <div>
             <p>Conteúdo da Aba 4: Aqui você pode colocar observações.</p>
           </div>
