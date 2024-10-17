@@ -1,125 +1,100 @@
-// Footer.tsx
+import {
+  faFacebook,
+  faInstagram,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons"; // Importa ícones corretos
+import { faInfo, faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import "./styles.css";
 
-import React from 'react';
-import styled from 'styled-components';
-
-// Estilização do Footer
-const FooterContainer = styled.footer`
-  background-color: #003580;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  margin-bottom : 10px
-
-  @media (min-width: 768px) {
-    text-align: left;
-    padding: 40px 20px;
-  }
-`;
-
-const FooterContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-`;
-
-const Column = styled.div`
-  margin: 10px 0;
-
-  @media (min-width: 768px) {
-    margin: 0;
-  }
-`;
-
-const Title = styled.h3`
-  font-size: 1.2em;
-  margin-bottom: 10px;
-`;
-
-const Link = styled.a`
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.9em;
-  display: block;
-  margin-bottom: 5px;
-
-  &:hover {
-    text-decoration: underline;
-  }
-`;
-
-const SocialIcons = styled.div`
-  margin-top: 10px;
-
-  @media (min-width: 768px) {
-    margin-top: 0;
-  }
-
-  a {
-    margin: 0 10px;
-    color: #fff;
-    font-size: 1.5em;
-
-    &:hover {
-      color: #ffcc00;
-    }
-  }
-`;
-
-const Copyright = styled.p`
-  margin-top: 20px;
-  font-size: 0.8em;
-
-  @media (min-width: 768px) {
-    margin-top: 40px;
-  }
-`;
-
-// Componente Footer
 const Footer: React.FC = () => {
   return (
-    <FooterContainer>
-      <FooterContent>
-        <Column>
-          <Title>Agência de Viagens</Title>
-          <Link href="#">Pacotes Promocionais</Link>
-          <Link href="#">Destinos Populares</Link>
-          <Link href="#">Ofertas de Última Hora</Link>
-          <Link href="#">Contato</Link>
-        </Column>
-        <Column>
-          <Title>Informações</Title>
-          <Link href="#">Quem Somos</Link>
-          <Link href="#">Política de Privacidade</Link>
-          <Link href="#">Termos de Uso</Link>
-          <Link href="#">Ajuda</Link>
-        </Column>
-        <SocialIcons>
-          <Title>Nos Siga</Title>
-          <a href="#" aria-label="Facebook">
-            <i className="fab fa-facebook"></i>
+    <footer className="footer-container">
+      <div className="footer-content">
+        <div className="column">
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginBottom: "10px",
+            }}
+          >
+            <FontAwesomeIcon
+              icon={faPlaneDeparture}
+              className="icon"
+              style={{ marginRight: "10px" }}
+            />
+            <h3 className="title">Agência de Viagens</h3>
+          </div>
+          <a href="#" className="link">
+            Pacotes Promocionais
           </a>
-          <a href="#" aria-label="Instagram">
-            <i className="fab fa-instagram"></i>
+          <a href="#" className="link">
+            Destinos Populares
           </a>
-          <a href="#" aria-label="Twitter">
-            <i className="fab fa-twitter"></i>
+          <a href="#" className="link">
+            Ofertas de Última Hora
           </a>
-        </SocialIcons>
-      </FooterContent>
-      <Copyright>&copy; 2024 Agência de Viagens. Todos os direitos reservados.</Copyright>
-    </FooterContainer>
+          <a href="#" className="link">
+            Contato
+          </a>
+        </div>
+        <div className="column">
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginBottom: "10px",
+            }}
+          >
+            <FontAwesomeIcon
+              icon={faInfo}
+              className="icon"
+              style={{ marginRight: "10px" }}
+            />
+            <h3 className="title">Informações</h3>
+          </div>
+          <a href="#" className="link">
+            Quem Somos
+          </a>
+          <a href="#" className="link">
+            Política de Privacidade
+          </a>
+          <a href="#" className="link">
+            Termos de Uso
+          </a>
+          <a href="#" className="link">
+            Ajuda
+          </a>
+        </div>
+        <div className="social-icons">
+          <h3 className="title">Nos Siga nas redes sociais</h3>
+
+          <a href="#" aria-label="Facebook" className="social-link">
+            <FontAwesomeIcon icon={faFacebook} className="icon" />
+          </a>
+          <a href="#" aria-label="Instagram" className="social-link">
+            <FontAwesomeIcon icon={faInstagram} className="icon" />
+          </a>
+          <a href="#" aria-label="Twitter" className="social-link">
+            <FontAwesomeIcon icon={faTwitter} className="icon" />
+          </a>
+          <a href="#" aria-label="Youtube" className="social-link">
+            <FontAwesomeIcon icon={faYoutube} className="icon" />
+          </a>
+        </div>
+      </div>
+      <p className="copyright">
+        &copy; 2024 CarpeDiem Travel. Todos os direitos reservados.
+      </p>
+      <p className="developer-brand">
+        Desenvolvido por SoftWorks. Todos os direitos reservados.
+      </p>
+    </footer>
   );
 };
 
