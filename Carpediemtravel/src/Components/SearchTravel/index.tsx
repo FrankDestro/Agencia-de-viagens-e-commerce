@@ -1,4 +1,3 @@
-// src/components/SearchTravel.tsx
 import {
   faCalendarAlt,
   faGift,
@@ -11,7 +10,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import TravelOptions from "../Viajantes";
-import "./styles.css"; // Adicione o caminho correto do seu CSS
+import "./styles.css";
 
 const SearchTravel: React.FC = () => {
   const [destination, setDestination] = useState("");
@@ -22,7 +21,7 @@ const SearchTravel: React.FC = () => {
   const [adults] = useState(1);
   const [children] = useState(0);
 
-  const [activeTab, setActiveTab] = useState(1); // Controla qual aba está ativa
+  const [activeTab, setActiveTab] = useState(1); 
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -46,7 +45,6 @@ const SearchTravel: React.FC = () => {
 
   return (
     <div className="search-travel">
-      {/* Controles de Abas */}
       <div className="tabs">
         <button
           className={`tab-button ${activeTab === 1 ? "active" : ""}`}
@@ -84,14 +82,11 @@ const SearchTravel: React.FC = () => {
         </button>
       </div>
 
-      {/* Conteúdo das Abas */}
       <div className="tab-content">
         {activeTab === 1 && (
           <div>
             <form onSubmit={handleSearch}>
-              <div
-                className="search-inputs"
-              >
+              <div className="search-inputs">
                 <div className="input-group">
                   <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
                   <input
@@ -131,12 +126,12 @@ const SearchTravel: React.FC = () => {
                   />
                 </div>
               </div>
-              <div className="guests-selection">
+              <div className="button-selections">
                 <TravelOptions />
+                <button type="submit" className="search-button">
+                  <FontAwesomeIcon icon={faSearch} /> Buscar
+                </button>
               </div>
-              <button type="submit" className="search-button">
-                <FontAwesomeIcon icon={faSearch} /> Buscar
-              </button>
             </form>
           </div>
         )}

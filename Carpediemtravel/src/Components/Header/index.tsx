@@ -1,4 +1,5 @@
 import {
+  faBars,
   faEnvelope,
   faGlobe,
   faPhone,
@@ -34,7 +35,9 @@ const Header: React.FC = () => {
               style={{ width: "190px", height: "70px", marginRight: "10px" }}
             />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbar-nav" />
+          <Navbar.Toggle aria-controls="navbar-nav">
+            <FontAwesomeIcon icon={faBars} style={{ fontSize: "24px" }} />
+          </Navbar.Toggle>
           <Navbar.Collapse id="navbar-nav">
             <Nav className="me-auto m-3">
               <span className="mx-3">

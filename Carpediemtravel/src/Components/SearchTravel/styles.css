@@ -1,152 +1,128 @@
-.teste {
-  margin-top: 50px;
-}
-
 .search-travel {
-  max-width: 1000px;
+  max-width: 700px; 
   margin: 0 auto;
-  padding: 20px;
+  padding: 15px; 
   text-align: center;
   background: #fff;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  border-radius: 10px; /* Arredondamento dos cantos */
-  color: black; /* Cor do texto para contraste com o fundo */
-}
-
-.search-travel h2 {
-  color: gray;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 700;
-  font-size: 18px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.541); 
+  border-radius: 8px; 
+  margin-top: 40px;
 }
 
 .search-inputs {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 10px; 
 }
 
 .input-group {
   display: flex;
   align-items: center;
-  margin: 10px 5px; /* Ajuste do espaço entre os inputs */
-  flex: 1 1 45%; /* Ajusta a largura dos inputs para ocuparem 45% */
-  position: relative; /* Para posicionar o ícone dentro do input */
-}
-
-.input-group .icon {
-  position: absolute; /* Posiciona o ícone dentro do input */
-  left: 10px; /* Distância do lado esquerdo */
-  color: #888; /* Cor do ícone */
+  margin: 8px 5px; 
+  flex: 1 1 48%; 
+  position: relative; 
 }
 
 .input-group input {
-  flex: 4;
-  padding: 10px 10px 10px 40px; /* Espaço à esquerda para o ícone */
+  flex: 1;
+  padding: 8px 8px 8px 35px; 
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-left: 10px; /* Espaço entre o ícone e o input */
+  font-size: 14px; 
 }
 
-.guests-selection {
-  display: flex;
-  justify-content: end;
+.input-group .icon {
+  position: absolute;
+  left: 10px; 
+  color: #888;
+  font-size: 16px;
 }
 
-.guests-item {
+.button-selections {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin: 10px 5px; /* Ajuste do espaço entre os selects */
-  flex: 1 1 30%; /* Ajusta a largura dos selects para ocuparem 30% */
-}
-
-.guests-item label {
-  margin-right: 10px;
 }
 
 .search-button {
-  padding: 10px 20px;
+  padding: 8px 15px; 
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%;
-  margin-top: 15px; /* Espaço acima do botão */
+  width: 40%;
 }
 
 .search-button:hover {
   background-color: #0056b3;
-}
-
-/* Media Queries para responsividade */
-@media (max-width: 768px) {
-  .input-group,
-  .guests-item {
-    flex: 1 1 100%; /* Ocupa 100% da largura em telas menores */
-  }
-
-  .search-button {
-    margin-top: 10px; /* Ajuste do espaço acima do botão em telas menores */
-  }
 }
 
 .tabs {
   display: flex;
-  justify-content: flex-start; /* Abas uma ao lado da outra */
+  justify-content: space-between;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 20px;
+  margin-bottom: 15px; 
 }
 
 .tab-button {
-  background: none; /* Remove o fundo */
-  border: none; /* Remove bordas */
-  padding: 10px 20px;
+  background: none;
+  border: none;
+  padding: 8px 15px;
   cursor: pointer;
-  color: #333; /* Cor do texto */
-  font-size: 16px;
-  margin-right: 10px;
-  border-bottom: 2px solid transparent; /* Linha transparente por padrão */
+  color: #333;
+  font-size: 13px; 
+  border-bottom: 2px solid transparent;
   transition: border-bottom 0.3s ease;
 }
 
 .tab-button:hover {
-  border-bottom: 2px solid #ccc; /* Linha em hover */
+  border-bottom: 2px solid #ccc;
 }
 
 .tab-button.active {
-  border-bottom: 2px solid #007bff; /* Aba ativa com sublinhado azul */
+  border-bottom: 2px solid #007bff;
 }
 
 .tab-content {
-  margin-top: 20px;
+  margin-top: 15px; 
 }
 
-input,
-button {
-  padding: 10px;
-  margin-bottom: 10px;
+@media (min-width: 400px) {
+  .search-travel {
+    margin: 10px;
+  }
+  .input-group {
+    flex: 1 1 100%; 
+  }
+
+  .button-selections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
-.search-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px 20px;
+@media (min-width: 569px) {
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin: 8px 5px; 
+    flex: 1 1 48%;
+    position: relative; 
+  }
+
+  .button-selections {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
-.search-button:hover {
-  background-color: #0056b3;
+@media (min-width: 660px) {
+  .search-travel {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
 }
 
-.icon {
-  margin-right: 8px;
-}
-
-.input-group {
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-}
