@@ -4,11 +4,11 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons"; // Importa ícones corretos
-import { faInfo, faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
+import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons/faInfoCircle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./styles.css";
-import { faInfoCircle } from "@fortawesome/free-solid-svg-icons/faInfoCircle";
 
 const Footer: React.FC = () => {
   return (

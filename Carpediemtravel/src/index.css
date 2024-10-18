@@ -4,8 +4,6 @@
 @tailwind components;
 @tailwind utilities; */
 
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
 
 :root {
     --theme-bg-color: linear-gradient(to bottom, #fdd835, #fbc12d);
