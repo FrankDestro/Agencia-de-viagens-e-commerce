@@ -1,0 +1,92 @@
+.card-container {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  transition: transform 0.2s;
+  text-align: left;
+  position: relative; 
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.card-description {
+  font-size: 1em;
+  color: #777;
+}
+
+.card-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #176cbb;
+}
+
+.card-going {
+  font-size: 16px;
+  color: black;
+}
+
+.card-back {
+  font-size: 16px;
+  color: black;
+}
+
+.card-price-installment {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-icon {
+  font-size: 18px; 
+  color: #555; 
+  display: flex;
+  justify-content: left;
+}
+
+.icon-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px; 
+  margin-bottom: 10px; 
+}
+
+.card-icon {
+  font-size: 24px; 
+  color: #555; 
+}
+
+.card-banner {
+  position: absolute; 
+  bottom: 10px; 
+  right: 10px; 
+  background-color: rgba(0, 162, 255, 0.849);
+  color: #fff; 
+  padding: 5px 10px;
+  border-radius: 5px; 
+  font-weight: bold; 
+  font-size: 14px; 
+}

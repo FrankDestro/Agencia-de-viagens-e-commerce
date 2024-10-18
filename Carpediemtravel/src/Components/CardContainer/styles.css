@@ -1,38 +1,83 @@
+.container-package {
+  text-align: center;
+  padding: 40px;
+}
+
 .content-container {
   display: flex;
-  flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
-  justify-content: space-between; /* Espaçamento entre os cards */
-  gap: 20px; /* Espaçamento entre os cards */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
   max-width: 1600px;
-  margin: 0 auto; /* Centraliza o container na tela */
+  margin: 0 auto;
 }
 
 .package-title {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #333;
+  text-align: left;
+  margin-left: 140px;
 }
 
-.container-package {
-  position: relative;
-  top: -400px; /* Ajuste este valor conforme necessário para posicionar mais para cima */
-  z-index: 1; /* Garante que o SearchTravel fique acima do TravelCarousel */
+.package-subtitle {
+  font-size: 20px;
+  color: #555;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .card-item {
-  flex: 1 1 calc(25% - 20px); /* Quatro cards por linha, ajustáveis */
+  flex: 1 1 calc(25% - 20px);
   min-width: 250px;
+}
+
+.package-subtitle {
+  font-size: 20px;
+  color: #555;
+  margin-top: 20px;
+  text-align: right;
+  margin-right: 150px;
+}
+
+.package-subtitle-link {
+  font-size: 20px;
+  color: #007bff; /* Cor azul para indicar link */
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.package-subtitle-link:hover {
+  text-decoration: underline; /* Aparece o sublinhado no hover */
+  color: #0056b3; /* Cor mais escura ao passar o mouse */
 }
 
 @media (max-width: 768px) {
   .card-item {
-    flex: 1 1 calc(50% - 20px); /* Dois cards por linha em telas menores */
+    flex: 1 1 calc(50% - 20px);
   }
 }
 
 @media (max-width: 480px) {
   .card-item {
-    flex: 1 1 100%; /* Um card por linha em telas muito pequenas */
+    flex: 1 1 100%;
+  }
+
+  .package-title {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 480px) {
+  .package-title {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .package-title {
+    margin-left: 140px;
   }
 }

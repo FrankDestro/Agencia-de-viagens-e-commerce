@@ -31,7 +31,7 @@ const TravelOptions: React.FC = () => {
 
   return (
     <div className="travel-options-wrapper">
-      <button className="dropdown-toggle" onClick={toggleDropdown}>
+      <button className="dropdown-toggle-viajantes" onClick={toggleDropdown}>
         <span className="summary">
           {rooms} Quartos, {adults} Adultos, {children} Crianças
         </span>

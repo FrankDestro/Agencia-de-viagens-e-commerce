@@ -8,6 +8,7 @@ import { faInfo, faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./styles.css";
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons/faInfoCircle";
 
 const Footer: React.FC = () => {
   return (
@@ -52,9 +53,9 @@ const Footer: React.FC = () => {
             }}
           >
             <FontAwesomeIcon
-              icon={faInfo}
+              icon={faInfoCircle}
               className="icon"
-              style={{ marginRight: "10px" }}
+              style={{ marginRight: "10px", fontSize: "18px" }}
             />
             <h3 className="title">Informações</h3>
           </div>

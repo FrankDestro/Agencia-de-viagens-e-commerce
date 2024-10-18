@@ -2,18 +2,46 @@ import "bootstrap/dist/css/bootstrap.min.css"; // Importa o CSS do Bootstrap
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Importa o JS necessário para o toggle funcionar
 import Footer from "../../../Components/Footer";
 
+import Card from "../../../Components/Card";
+import CardContainer from "../../../Components/CardContainer";
 import Header from "../../../Components/Header";
-import "./styles.css";
 import SearchTravel from "../../../Components/SearchTravel";
+import "./styles.css";
 
 function Home() {
+  const travelData1 = {
+    image:
+      "https://cdn.blablacar.com/wp-content/uploads/br/2024/05/05094506/como-planejar-uma-viagem.webp",
+    title: "Santiago",
+    description: "Saindo de São paulo",
+    going: "16/11/2024",
+    back: "19/12/2024",
+    price: "A partir de R$ 999,00",
+    installment: "4x",
+    priceInstallment: "R$ 327,49",
+  };
+
   return (
     <>
       <Header />
       <div className="page-container">
         <SearchTravel />
-        <div className="content-wrap"></div>
-
+        <div className="content-wrap">
+          <CardContainer
+            text="Pacote e Ofertas"
+            subtitle=""
+            cards={[
+              <Card {...travelData1} />,
+              <Card {...travelData1} />,
+              <Card {...travelData1} />,
+              <Card {...travelData1} />,
+              <Card {...travelData1} />,
+              <Card {...travelData1} />,
+              <Card {...travelData1} />,
+              <Card {...travelData1} />,
+            ]}
+          />
+        </div>
         <Footer />
       </div>
     </>

@@ -1,71 +1,48 @@
-// TravelCard.tsx
+import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import "./styles.css";
 
-import React from 'react';
-import styled from 'styled-components';
-
-// Estilização do Card
-const CardContainer = styled.div`
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  margin: 20px;
-  transition: transform 0.2s;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-`;
-
-const Image = styled.img`
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-`;
-
-const Content = styled.div`
-  padding: 15px;
-  background-color: #fff;
-`;
-
-const Title = styled.h2`
-  font-size: 1.5em;
-  margin: 0;
-  color: #333;
-`;
-
-const Description = styled.p`
-  font-size: 1em;
-  color: #777;
-`;
-
-const Price = styled.p`
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #e91e63;
-`;
-
-// Definição de Props
 interface TravelCardProps {
   image: string;
   title: string;
   description: string;
   price: string;
+  going: string;
+  back: string;
+  installment: string;
+  priceInstallment: string;
 }
 
-// Componente Card
-const Card: React.FC<TravelCardProps> = ({ image, title, description, price }) => {
+const Card: React.FC<TravelCardProps> = ({
+  image,
+  title,
+  description,
+  price,
+  going,
+  back,
+  installment,
+  priceInstallment,
+}) => {
   return (
-    <CardContainer>
-      <Image src={image} alt={title} />
-      <Content>
-        <Title>{title}</Title>
-        <Description>{description}</Description>
-        <Price>{price}</Price>
-      </Content>
-    </CardContainer>
+    <div className="card-container">
+    <img className="card-image" src={image} alt={title} />
+    <div className="card-content">
+      <div className="icon-title-container">
+        <h2 className="card-title">{title}</h2>
+        <FontAwesomeIcon icon={faPlaneDeparture} className="card-icon" />
+      </div>
+      <span className="card-going">Ida: {going}</span>
+      <span className="card-back">Volta: {back}</span>
+      <p className="card-description">{description}</p>
+      <p className="card-price">{price}</p>
+      <span className="card-price-installment">
+        {installment} {priceInstallment}
+      </span>
+    </div>
+    <div className="card-banner">Promoção</div>
+  </div>
   );
 };
 
-// Exportando o Componente
 export default Card;
