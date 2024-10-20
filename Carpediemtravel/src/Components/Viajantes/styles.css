@@ -3,8 +3,9 @@
 }
 
 .dropdown-toggle-viajantes {
-  background-color: #007bff;
+  background-color: #FFAE00;
   color: white;
+  font-weight: bold;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -14,7 +15,7 @@
 }
 
 .dropdown-toggle-viajantes:hover {
-  background-color: #0056b3;
+  background-color: #ffae00a6;
 }
 
 .travel-options-dropdown {

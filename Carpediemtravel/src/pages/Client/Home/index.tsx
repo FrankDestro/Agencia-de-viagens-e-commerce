@@ -11,7 +11,7 @@ import "./styles.css";
 function Home() {
   const travelData1 = {
     image:
-      "https://cdn.blablacar.com/wp-content/uploads/br/2024/05/05094506/como-planejar-uma-viagem.webp",
+      "https://img.freepik.com/fotos-gratis/paisagem-natural_181624-30165.jpg?t=st=1729446185~exp=1729449785~hmac=e335cd69ab504ebc64fe248785065fa570aa3f3e1501e776a1b9e1889c45e429&w=1800",
     title: "Santiago",
     description: "Saindo de São paulo",
     going: "16/11/2024",

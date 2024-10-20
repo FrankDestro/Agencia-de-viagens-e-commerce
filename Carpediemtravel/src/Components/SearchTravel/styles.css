@@ -47,8 +47,9 @@
 
 .search-button {
   padding: 8px 15px;
-  background-color: #007bff;
+  background-color: #FFAE00;
   color: white;
+  font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -56,7 +57,7 @@
 }
 
 .search-button:hover {
-  background-color: #0056b3;
+  background-color: #ffae00a6;
 }
 
 .tabs {
@@ -91,8 +92,8 @@
 
 .slider {
   position: relative;
-  width: 90%;
-  height: 540px;
+  width: 100%;
+  height: 550px;
   overflow: hidden;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
@@ -111,30 +112,30 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-image: url("https://wallpapers.com/images/hd/most-beautiful-places-in-the-world-slrh7stw4vxwd2fr.jpg"); /* Imagem inicial */
-  animation: slideBackground 20s infinite ease-in-out; /* Animação de 20 segundos */
+  background-image: url("https://img.freepik.com/fotos-gratis/paisagem-natural_181624-30165.jpg?t=st=1729446185~exp=1729449785~hmac=e335cd69ab504ebc64fe248785065fa570aa3f3e1501e776a1b9e1889c45e429&w=1800"); /* Imagem inicial */
+  animation: slideBackground 20s infinite ease-in-out; 
   z-index: -1;
 }
 
 @keyframes slideBackground {
   0% {
-    background-image: url("https://wallpapers.com/images/hd/most-beautiful-places-in-the-world-slrh7stw4vxwd2fr.jpg");
+    background-image: url("https://img.freepik.com/fotos-gratis/paisagem-natural_181624-30165.jpg?t=st=1729446185~exp=1729449785~hmac=e335cd69ab504ebc64fe248785065fa570aa3f3e1501e776a1b9e1889c45e429&w=1800");
     opacity: 1;
   }
   25% {
-    background-image: url("https://wallpapers.com/images/hd/most-beautiful-places-in-the-world-nzx84knc4sph8vt7.jpg");
+    background-image: url("https://img.freepik.com/fotos-gratis/bela-foto-das-montanhas-refletindo-no-lago-frio-sob-o-ceu-nublado_181624-4446.jpg?t=st=1729446369~exp=1729449969~hmac=1f0065afba8979f812bfd6d4a3eb9b9dd5ea351e43af2b49f99773ddb52706ca&w=1380");
     opacity: 1;
   }
   50% {
-    background-image: url("https://portalsustentabilidade.com/wp-content/uploads/2023/02/design-destaque-36-1-1024x576.jpg");
+    background-image: url("https://img.freepik.com/fotos-gratis/paisagem-de-formacoes-rochosas-naturais_23-2151723098.jpg?t=st=1729446518~exp=1729450118~hmac=214619be13483d62615c1e94fc775422b3e8248373c52b91225a77b5218cb386&w=2000");
     opacity: 1;
   }
   75% {
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/213/499/697/moraine-lake-valley-of-the-ten-peaks-mountain-lake-mountain-wallpaper-preview.jpg");
+    background-image: url("https://img.freepik.com/fotos-gratis/vista-panoramica-das-colinas-rochosas-de-vestrahorn-na-peninsula-islandesa-com-praia-de-areia-preta-unica-e-ambiente-nordico-ao-ar-livre-paisagem-incrivel-criada-pelo-topo-da-montanha-e-pelas-ondas-do-mar_482257-69753.jpg?t=st=1729446428~exp=1729450028~hmac=8ffddb4f19a92c031e95c757a2c0999621d42d55e14b513b90dcd618e2c34452&w=1800");
     opacity: 1;
   }
   100% {
-    background-image: url("https://wallpapers.com/images/hd/most-beautiful-places-in-the-world-slrh7stw4vxwd2fr.jpg"); /* Volta para a imagem 1 */
+    background-image: url("https://img.freepik.com/fotos-gratis/paisagem-natural_181624-30165.jpg?t=st=1729446185~exp=1729449785~hmac=e335cd69ab504ebc64fe248785065fa570aa3f3e1501e776a1b9e1889c45e429&w=1800"); /* Volta para a imagem 1 */
     opacity: 1;
   }
 }

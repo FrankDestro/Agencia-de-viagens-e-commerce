@@ -1,15 +1,16 @@
 import {
-  faBars,
-  faEnvelope,
+  faArrowDown,
   faGlobe,
+  faMailBulk,
   faPhone,
-  faSignInAlt,
-} from "@fortawesome/free-solid-svg-icons";
+  faUser,
+} from "@fortawesome/free-solid-svg-icons"; // Importa a seta
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from "react";
-import { Container, Dropdown, Nav, Navbar } from "react-bootstrap";
+import { Container, Dropdown, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import Logo from "../../assets/logomain.jpg";
+import Whats from "../../assets/whatsapp.png";
 import "./styles.css";
 
 const Header: React.FC = () => {
@@ -25,54 +26,102 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <div className="container-main-navbar">
-      <Navbar expand="lg" className="container-navbar">
-        <Container>
-          <Navbar.Brand href="#" className="me-3 d-flex align-items-center">
-            <img
-              src={Logo}
-              alt="Logo"
-              style={{ width: "190px", height: "70px", marginRight: "10px" }}
-            />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbar-nav">
-            <FontAwesomeIcon icon={faBars} style={{ fontSize: "24px" }} />
-          </Navbar.Toggle>
-          <Navbar.Collapse id="navbar-nav">
-            <Nav className="me-auto m-3">
-              <span className="mx-3">
-                <FontAwesomeIcon icon={faPhone} /> Televendas: 0800 049 8790
-              </span>
-              <span className="mx-3">
-                <FontAwesomeIcon icon={faEnvelope} /> email: agencia.ag@gmail.com
-              </span>
-              <Dropdown className="d-inline-block mx-3 mb-3 m-3">
-                <Dropdown.Toggle variant="outline-secondary" id="dropdown-basic">
-                  <FontAwesomeIcon icon={faGlobe} />{" "}
-                  {countries.find(({ name }) => name === lang)?.flag} {lang}
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  {countries.map(({ name, flag }) => (
-                    <Dropdown.Item key={name} onClick={() => setLang(name)}>
-                      {flag} {name}
-                    </Dropdown.Item>
-                  ))}
-                </Dropdown.Menu>
-              </Dropdown>
-              <Dropdown className="d-inline-block container-login">
-                <Dropdown.Toggle variant="outline-secondary" id="dropdown-login">
-                  <FontAwesomeIcon icon={faSignInAlt} /> Login
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item href="/login">Entrar</Dropdown.Item>
-                  <Dropdown.Item href="/register">Registrar</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
+    <Navbar bg="body-tertiary" expand="lg" className="container-navbar">
+      <Container fluid>
+        <Navbar.Brand href="#">
+          <img
+            src={Logo}
+            alt="Logo"
+            style={{ width: "190px", height: "70px", marginRight: "10px" }}
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarText" />
+        <Navbar.Collapse id="navbarText">
+          <Nav className="me-auto mb-2 mb-lg-0">
+            <Nav.Link href="#" className="text-white">
+              Home
+            </Nav.Link>
+            <Nav.Link href="#" className="text-white">
+              Features
+            </Nav.Link>
+
+            <NavDropdown
+               title={<span style={{ color: 'white' }}>Pricing</span>} 
+               id="pricing-dropdown" 
+               className="text-white"
+            >
+              <NavDropdown.Item href="/pricing/basic">
+                Basic Plan
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/pricing/premium">
+                Premium Plan
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/pricing/enterprise">
+                Enterprise Plan
+              </NavDropdown.Item>
+            </NavDropdown>
+            <FontAwesomeIcon icon={faArrowDown} fontSize={12} color="white" />
+          </Nav>
+          <span className="navbar-text d-flex align-items-center">
+            <div className="mail-container">
+              <div className="mail-icon">
+                <FontAwesomeIcon icon={faMailBulk} />
+              </div>
+              <div style={{ display: "flex", flexDirection: "row" }}>
+                <span className="mail-title">Email:</span>
+                <span className="mail-text">carpe.diem.travel@hotmail.com</span>
+              </div>
+            </div>
+
+            <div className="phone-container">
+              <div className="phone-icon">
+                <FontAwesomeIcon icon={faPhone} />
+              </div>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <span className="phone-title">Televendas </span>
+                <span className="phone-number">(11) 3280-1004</span>
+              </div>
+              <div className="whatsapp-icon">
+                <img src={Whats} alt="whats" />
+              </div>
+              <div style={{ display: "flex", flexDirection: "column" }}>
+                <span className="phone-title">WhatsApp</span>
+                <span className="phone-number">(11) 988887766</span>
+              </div>
+            </div>
+
+            <Dropdown className="d-inline-block mx-3 container-login">
+              <Dropdown.Toggle variant="" id="dropdown-basic">
+                <FontAwesomeIcon icon={faGlobe} />{" "}
+                {countries.find(({ name }) => name === lang)?.flag}
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                {countries.map(({ name, flag }) => (
+                  <Dropdown.Item key={name} onClick={() => setLang(name)}>
+                    {flag} {name}
+                  </Dropdown.Item>
+                ))}
+              </Dropdown.Menu>
+            </Dropdown>
+
+            <Dropdown className="d-inline-block container-login">
+              <Dropdown.Toggle variant="" id="dropdown-login">
+                <FontAwesomeIcon icon={faUser} />
+                <FontAwesomeIcon
+                  icon={faArrowDown}
+                  fontSize={12}
+                  style={{ marginLeft: "5px" }}
+                />
+              </Dropdown.Toggle>
+              <Dropdown.Menu className="dropdown-menu">
+                <Dropdown.Item href="/login">Entrar</Dropdown.Item>
+                <Dropdown.Item href="/register">Registrar</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          </span>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
