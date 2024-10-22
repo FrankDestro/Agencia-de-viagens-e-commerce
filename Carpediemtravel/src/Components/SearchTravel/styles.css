@@ -163,7 +163,7 @@
 @media (min-width: 400px) {
   .search-travel {
     margin: 10px;
-    width: 100%;
+    width: 90%;
   }
   .input-group {
     flex: 1 1 100%;

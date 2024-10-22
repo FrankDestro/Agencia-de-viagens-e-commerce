@@ -153,6 +153,10 @@
   }
 }
 
+.navbar-text {
+  display: flex;
+}
+
 @media (min-width: 769px) {
   .container-navbar {
     flex-direction: row;

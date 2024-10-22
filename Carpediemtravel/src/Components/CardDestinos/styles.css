@@ -30,7 +30,7 @@
   text-align: center;
 }
 
-.card-title {
+.card-title-destinos {
   font-size: 24px;
   margin: 0;
   color: #fff;
@@ -47,7 +47,7 @@
     height: 250px;
   }
 
-  .card-title {
+  .card-title-destinos {
     font-size: 20px;
   }
 
@@ -61,7 +61,7 @@
     height: 200px;
   }
 
-  .card-title {
+  .card-title-destinos {
     font-size: 18px;
   }
 

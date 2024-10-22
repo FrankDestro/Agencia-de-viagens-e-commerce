@@ -12,7 +12,7 @@ const CardDestinos: React.FC<CardProps> = ({ image, title, description }) => {
     <div className="card">
       <img src={image} alt={title} />
       <div className="card-overlay">
-        <h2 className="card-title">{title}</h2>
+        <h2 className="card-title-destinos">{title}</h2>
         <p className="card-description">{description}</p>
       </div>
     </div>
