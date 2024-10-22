@@ -1,12 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css"; // Importa o CSS do Bootstrap
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Importa o JS necessário para o toggle funcionar
-import Footer from "../../../Components/Footer";
-
 import Card from "../../../Components/Card";
 import CardContainer from "../../../Components/CardContainer";
+import CardDestinos from "../../../Components/CardDestinos";
+import Footer from "../../../Components/Footer";
 import Header from "../../../Components/Header";
 import SearchTravel from "../../../Components/SearchTravel";
+
 import "./styles.css";
+import CarrouselParks from "../../../Components/CarrouselParks";
 
 function Home() {
   const travelData1 = {
@@ -41,6 +43,47 @@ function Home() {
               <Card {...travelData1} />,
             ]}
           />
+          <CardContainer
+            text="Destinos mais procurados"
+            subtitle="Ver mais destinos..."
+            cards={[
+              <>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    flexWrap: "wrap",
+                  }}
+                >
+                  <CardDestinos
+                    image="https://i0.wp.com/turismo.eurodicas.com.br/wp-content/uploads/2023/06/legoland-park.jpg?w=750&ssl=1"
+                    title="Monique"
+                    description="Lorem ipsum dolor sit amet."
+                    key={1}
+                  />
+                  <CardDestinos
+                    image="https://i0.wp.com/turismo.eurodicas.com.br/wp-content/uploads/2023/06/legoland-park.jpg?w=750&ssl=1"
+                    title="Monique"
+                    description="Lorem ipsum dolor sit amet."
+                    key={2}
+                  />
+                  <CardDestinos
+                    image="https://i0.wp.com/turismo.eurodicas.com.br/wp-content/uploads/2023/06/legoland-park.jpg?w=750&ssl=1"
+                    title="Monique"
+                    description="Lorem ipsum dolor sit amet."
+                    key={3}
+                  />
+                  <CardDestinos
+                    image="https://i0.wp.com/turismo.eurodicas.com.br/wp-content/uploads/2023/06/legoland-park.jpg?w=750&ssl=1"
+                    title="Monique"
+                    description="Lorem ipsum dolor sit amet."
+                    key={4}
+                  />
+                </div>
+              </>,
+            ]}
+          />
+          <CarrouselParks />
         </div>
         <Footer />
       </div>

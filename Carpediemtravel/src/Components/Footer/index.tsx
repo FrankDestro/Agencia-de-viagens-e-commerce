@@ -3,7 +3,7 @@ import {
   faInstagram,
   faTwitter,
   faYoutube,
-} from "@fortawesome/free-brands-svg-icons"; // Importa ícones corretos
+} from "@fortawesome/free-brands-svg-icons";
 import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons/faInfoCircle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
             <FontAwesomeIcon
               icon={faPlaneDeparture}
               className="icon"
-              style={{ marginRight: "10px" }}
+              style={{ marginRight: "10px", fontSize: "24px", color:"#ffae00" }}
             />
             <h3 className="title">Agência de Viagens</h3>
           </div>
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
             <FontAwesomeIcon
               icon={faInfoCircle}
               className="icon"
-              style={{ marginRight: "10px", fontSize: "18px" }}
+              style={{ marginRight: "10px", fontSize: "24px", color:"#ffae00" }}
             />
             <h3 className="title">Informações</h3>
           </div>

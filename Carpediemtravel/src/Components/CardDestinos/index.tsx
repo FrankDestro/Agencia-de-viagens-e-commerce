@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css"; // Arquivo CSS para estilização
+import "./styles.css";
 
 type CardProps = {
   image: string;

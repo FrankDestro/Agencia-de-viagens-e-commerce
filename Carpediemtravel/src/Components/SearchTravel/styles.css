@@ -9,6 +9,21 @@
   margin-top: 40px;
 }
 
+.container-tab {
+  width: 100%;
+  height: 161px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-tab p {
+  margin: 0;
+  color: orange;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .search-inputs {
   display: flex;
   flex-wrap: wrap;
@@ -47,7 +62,7 @@
 
 .search-button {
   padding: 8px 15px;
-  background-color: #FFAE00;
+  background-color: #ffae00;
   color: white;
   font-weight: bold;
   border: none;
@@ -113,7 +128,7 @@
   background-size: cover;
   background-position: center;
   background-image: url("https://img.freepik.com/fotos-gratis/paisagem-natural_181624-30165.jpg?t=st=1729446185~exp=1729449785~hmac=e335cd69ab504ebc64fe248785065fa570aa3f3e1501e776a1b9e1889c45e429&w=1800"); /* Imagem inicial */
-  animation: slideBackground 20s infinite ease-in-out; 
+  animation: slideBackground 20s infinite ease-in-out;
   z-index: -1;
 }
 
@@ -141,13 +156,14 @@
 }
 
 .slider::before {
-  animation: slideBackground 20s infinite; /* Ajusta o tempo total da animação */
-  transition: background-image 1s ease-in-out; /* Transição suave entre as imagens */
+  animation: slideBackground 20s infinite;
+  transition: background-image 1s ease-in-out;
 }
 
 @media (min-width: 400px) {
   .search-travel {
     margin: 10px;
+    width: 100%;
   }
   .input-group {
     flex: 1 1 100%;
@@ -157,6 +173,36 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .tabs {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+    scrollbar-width: thin;
+    scrollbar-color: orange transparent;
+  }
+
+  .tabs::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .tabs::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .tabs::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 4px;
+  }
+
+  .tab {
+    display: inline-block;
+    min-width: 100px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
   }
 }
 

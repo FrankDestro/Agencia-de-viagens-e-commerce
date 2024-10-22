@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: #0758C9;
+  background-color: #0758c9;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -85,7 +85,6 @@
   font-size: 14px;
   font-weight: bold;
 }
-
 
 @media (min-width: 768px) {
   .copyright {

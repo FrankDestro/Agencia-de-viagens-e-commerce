@@ -1,6 +1,6 @@
 .container-package {
   text-align: center;
-  padding: 40px;
+  padding: 20px;
 }
 
 .content-container {
@@ -43,15 +43,15 @@
 
 .package-subtitle-link {
   font-size: 20px;
-  color: #007bff; /* Cor azul para indicar link */
+  color: #007bff;
   margin-top: 20px;
   text-align: center;
-  text-decoration: none; /* Remove o sublinhado do link */
+  text-decoration: none;
 }
 
 .package-subtitle-link:hover {
-  text-decoration: underline; /* Aparece o sublinhado no hover */
-  color: #0056b3; /* Cor mais escura ao passar o mouse */
+  text-decoration: underline;
+  color: #0056b3;
 }
 
 @media (max-width: 768px) {

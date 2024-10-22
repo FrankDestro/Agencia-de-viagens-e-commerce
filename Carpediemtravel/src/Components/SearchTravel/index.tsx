@@ -7,7 +7,7 @@ import {
   faPlaneDeparture,
   faSearch,
   faShieldAlt,
-  faSwimmer
+  faSwimmer,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
@@ -78,20 +78,14 @@ const SearchTravel: React.FC = () => {
             onClick={() => setActiveTab(4)}
           >
             Parques
-            <FontAwesomeIcon
-              icon={faSwimmer}
-              style={{ marginLeft: "10px" }}
-            />
+            <FontAwesomeIcon icon={faSwimmer} style={{ marginLeft: "10px" }} />
           </button>
           <button
             className={`tab-button ${activeTab === 5 ? "active" : ""}`}
             onClick={() => setActiveTab(5)}
           >
             Carros
-            <FontAwesomeIcon
-              icon={faCar}
-              style={{ marginLeft: "10px" }}
-            />
+            <FontAwesomeIcon icon={faCar} style={{ marginLeft: "10px" }} />
           </button>
           <button
             className={`tab-button ${activeTab === 6 ? "active" : ""}`}
@@ -160,31 +154,29 @@ const SearchTravel: React.FC = () => {
           )}
 
           {activeTab === 2 && (
-            <div>
-              <p>
-                Conteúdo da Aba 2: Aqui você pode colocar informações extras.
-              </p>
+            <div className="container-tab">
+              <p>Em breve</p>
             </div>
           )}
 
           {activeTab === 3 && (
-            <div>
-              <p>Conteúdo da Aba 3: Aqui você pode colocar observações.</p>
+            <div className="container-tab">
+              <p> Em breve</p>
             </div>
           )}
           {activeTab === 4 && (
-            <div>
-              <p>Conteúdo da Aba 4: Aqui você pode colocar observações.</p>
+            <div className="container-tab">
+              <p> Em breve</p>
             </div>
           )}
-           {activeTab === 5 && (
-            <div>
-              <p>Conteúdo da Aba 5: Aqui você pode colocar observações.</p>
+          {activeTab === 5 && (
+            <div className="container-tab">
+              <p> Em breve</p>
             </div>
           )}
-           {activeTab === 6 && (
-            <div>
-              <p>Conteúdo da Aba 6: Aqui você pode colocar observações.</p>
+          {activeTab === 6 && (
+            <div className="container-tab">
+              <p> Em breve</p>
             </div>
           )}
         </div>
