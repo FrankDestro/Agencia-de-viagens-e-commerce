@@ -145,6 +145,28 @@
   border-radius: 10px;
 }
 
+.offcanvas-container {
+  background-color: #ffa600;
+  color: #fff;
+}
+
+.offcanvas-body .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #fff;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+@media (min-width: 300px) {
+  .navbar-nav {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .container-navbar {
     height: auto;
@@ -171,8 +193,19 @@
     align-items: center;
     justify-content: center;
   }
+  .button-offcanvas {
+    display: none;
+  }
 }
 
+@media (max-width: 992px) {
+  .container-language {
+    width: 30%;
+  }
+  .container-login {
+    width: 30%;
+  }
+}
 .container-login {
   margin-left: 12px;
 }
